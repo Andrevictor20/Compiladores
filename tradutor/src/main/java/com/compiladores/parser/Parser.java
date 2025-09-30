@@ -1,18 +1,24 @@
 package com.compiladores.parser;
 
+import com.compiladores.scanner.Scanner;
+
 public class Parser {
-    private byte[] input;
-    private int current;
+
+    private Scanner scan;
+    private char currentToken;
 
     public Parser(byte[] input) {
-        this.input = input;
+        scan = new Scanner(input);
+        currentToken = scan.nextToken();
+    }
+
+    private void nextToken() {
+        currentToken = scan.nextToken();
     }
 
     public void parse() {
         expr();
     }
-
-    
 
     private void match(char c) {
         if (c == peek()) {
