@@ -1,4 +1,4 @@
-//"https://profsergiocosta.notion.site/1-Um-simples-tradutor-fbb0d4d00474436db8bfa5ec543ccadf"
+//"https://profsergiocosta.notion.site/Tradu-o-dirigida-por-sintaxe-bc590c67d8234f81bee5cfdb505f2dd1"
 package com.compiladores.main;
 
 import com.compiladores.parser.Parser;
