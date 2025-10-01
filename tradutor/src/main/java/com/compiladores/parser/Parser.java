@@ -1,11 +1,13 @@
 package com.compiladores.parser;
 
 import com.compiladores.scanner.Scanner;
+import com.compiladores.scanner.Token;
+import com.compiladores.scanner.TokenType;
 
-public class Parser {
+class Parser {
 
     private Scanner scan;
-    private char currentToken;
+    private Token currentToken;
 
     public Parser(byte[] input) {
         scan = new Scanner(input);
@@ -20,8 +22,8 @@ public class Parser {
         expr();
     }
 
-    private void match(char t) {
-        if (currentToken == t) {
+    private void match(TokenType t) {
+        if (currentToken.type == t) {
             nextToken();
         } else {
             throw new Error("syntax error");
@@ -33,13 +35,9 @@ public class Parser {
         oper();
     }
 
-    void digit() {
-        if (Character.isDigit(currentToken)) {
-            System.out.println("push " + currentToken);
-            match(currentToken);
-        } else {
-            throw new Error("syntax error");
-        }
+    void number() {
+        System.out.println("push " + currentToken.lexeme);
+        match(TokenType.NUMBER);
     }
 
     void oper() {
