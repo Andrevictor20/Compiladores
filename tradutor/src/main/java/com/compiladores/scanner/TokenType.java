@@ -6,6 +6,7 @@ public enum TokenType {
 
      // Literals.
      NUMBER,
-	
-		EOF
+     IDENT,
+
+     EOF;
 }
