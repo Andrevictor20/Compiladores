@@ -4,7 +4,7 @@ import com.compiladores.scanner.Scanner;
 import com.compiladores.scanner.Token;
 import com.compiladores.scanner.TokenType;
 
-class Parser {
+public class Parser {
 
     private Scanner scan;
     private Token currentToken;

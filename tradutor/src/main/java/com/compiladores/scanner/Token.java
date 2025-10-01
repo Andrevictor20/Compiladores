@@ -4,8 +4,8 @@ package com.compiladores.scanner;
 
 public class Token {
 
-    final TokenType type;
-    final String lexeme;
+    public final TokenType type;
+    public final String lexeme;
 
     public Token (TokenType type, String lexeme) {
         this.type = type;
