@@ -16,9 +16,6 @@ Este projeto consiste em um tradutor/interpreter simples desenvolvido em Java, c
 		- `Token.java`: Estrutura de dados para representar um token.
 		- `TokenType.java`: Enumeração dos tipos de tokens reconhecidos.
 
-- **src/test/java/com/compiladores/**
-	- `AppTest.java`: Testes automatizados para garantir o funcionamento do tradutor.
-
 - **pom.xml**: Gerenciamento de dependências e configuração do projeto Maven.
 
 ## Funcionalidades
