@@ -9,7 +9,6 @@ Este projeto consiste em um tradutor/interpreter simples desenvolvido em Java, c
 	- `Main.java`: Ponto de entrada do programa.
 	- **interpretador/**
 		- `Interpretador.java`: Responsável pela execução dos comandos interpretados.
-		- `Command.java`: Representa comandos da linguagem.
 	- **parser/**
 		- `Parser.java`: Realiza a análise sintática dos tokens gerados pelo scanner.
 	- **scanner/**
